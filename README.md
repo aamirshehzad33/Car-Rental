@@ -1,44 +1,65 @@
-<<<<<<< HEAD
-# Car-Rental
-=======
-# Car Rental Project
-
-***You can read this file in [Turkish](https://github.com/poyrazaktas/Car-Rental-Project/blob/master/README.tr-TR.md)***
-
-In this project, I simulated the back-end of a Car Rental system using ASP.Net Core and the front-end using Angular. My aim was to comply with SOLID coding principles while performing this simulation and to increase project scalability using n-Layered Architecture. My motivation was to complete the C# & Angular boot camp assignments I attended [kodlama.io](https://www.kodlama.io/). 
-
-The project I wrote has been reviewed and [approved](https://www.kodlama.io/p/gururtablosu) by the instructor or his team.
-
-## You can read the **README** files inside the backend and frontend directory.
-
-### [Backend](https://github.com/poyrazaktas/Car-Rental-Project/tree/master/CarRentalProject)
-### [Frontend](https://github.com/poyrazaktas/Car-Rental-Project/tree/master/car-rental-frontend)
+# 🚗 Car Rental Project
 
 
-## How to open this project 
+### 📝 Overview 
 
-1. First of all, you need to open [backend solution](https://github.com/poyrazaktas/Car-Rental-Project/blob/master/CarRentalProject/CarRental.sln).
-2. Run ASP.Net Core project with IIS Express. 
-   - While IIS Express is running, it can select different ports on different computers. Therefore, if the port number `localhost:44324` is different, in Angular, this change is made via  [app-settings.ts](https://github.com/poyrazaktas/Car-Rental-Project/blob/master/car-rental-frontend/src/app/app-settings.ts).
 
-3. Navigate to the [front-end directory](https://github.com/poyrazaktas/Car-Rental-Project/tree/master/car-rental-frontend) and run the project.
-   ```
-   cd car-rental-frontend
-   ng serve --open
-   ```
+The **Car Rental Project** is a modern web application designed for users to **browse, rent, and manage** vehicles effortlessly. Built with **Next.js and Node.js**, the project ensures a smooth and efficient rental experience with real-time booking updates, secure authentication, and a user-friendly interface. 
 
-## Screenshots from the app      
+This project follows **best practices in modern web development**, integrating **MongoDB for data management, Stripe for payments, and API-based architecture** for seamless interactions. With a clean and responsive UI powered by **Tailwind CSS and Shadcn UI**, it guarantees an optimal user experience on all devices. 🚀
+
+
+## 🛠 Tech Stack 
+
+
+### 🔹 Frontend:  
+
+
+- ⚡ **Next.js** – Fast & SEO-friendly framework  
+- 🎨 **Tailwind CSS** – Utility-first styling  
+- 🖌 **Shadcn UI** – Modern UI components  
+- 🔄 **React Query** – Efficient API data fetching & caching  
+- 📝 **React Hook Form & Zod** – Form validation and management  
+
+### 🔹 Backend:  
+
+
+- 🟢 **Node.js** – Backend runtime environment  
+- 🚀 **Express.js** – API development  
+- 🛢 **MongoDB** – Database for storing rental data  
+- 🔐 **JWT Authentication** – Secure login & authentication  
+- 📡 **RESTful APIs** – Backend communication  
+
+
+### 🔹 Additional Features:  
+
+
+- 💳 **Stripe Payments** – Secure online transactions  
+- 📅 **Booking System** – Real-time rental management  
+- 🏠 **Admin Dashboard** – Manage users, cars, and bookings  
+- ☁ **Cloudinary Integration** – Image upload & storage  
+- 📧 **Email Notifications** – Booking confirmations  
+
+## Screenshots     
 
 ![Screenshots from the app](https://github.com/poyrazaktas/Car-Rental-Project/blob/master/Ekler/running_project.gif?raw=true)
 
-## Entity Relation Diagram
 
-![ER Diagram](https://github.com/poyrazaktas/Car-Rental-Project/blob/master/Ekler/ER.png?raw=true)
+### 🔹 Installation  
 
-## Requirements
 
-- .Net Core v3.1+
-- SQL Server 13.0+
-- Node.js v14.16.0+
-- Angular v11.2.4+
->>>>>>> e0b5ef4 (Initial commit)
+Clone the repository and install dependencies:
+```bash
+# Clone the repository
+git clone https://github.com/your-username/car-rental-project.git
+cd car-rental-project
+```
+
+
+## 🎯 Contributing
+ 
+Contributions are welcome! If you’d like to improve the project, please fork the repository and submit a pull request. 
+
+## 📄 License
+
+This project is licensed under the MIT License.
