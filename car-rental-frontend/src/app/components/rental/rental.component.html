@@ -1,0 +1,31 @@
+<div *ngIf="isDataLoaded == false" class="d-flex justify-content-center">
+  <div class="spinner-border text-primary" style="width: 10rem; height: 10rem"  role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div *ngIf="isDataLoaded != false">
+  <table class="table table table-bordered">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Brand</th>
+        <th>Description</th>
+        <th>Daily Price</th>
+        <th>Rent Date</th>
+        <th>Return Date</th>
+      </tr>
+    </thead>
+
+    <tr *ngFor="let rental of rentals">
+      <td>{{ rental.customerFirstName }}</td>
+      <td>{{ rental.customerLastName }}</td>
+      <td>{{ rental.brandName }}</td>
+      <td>{{ rental.carDescription }}</td>
+      <td>{{ rental.carDailyPrice }}</td>
+      <td>{{ rental.rentDate | date:'medium'}}</td>
+      <td>{{ rental.returnDate | date:'medium'}}</td>
+    </tr>
+  </table>
+</div>
